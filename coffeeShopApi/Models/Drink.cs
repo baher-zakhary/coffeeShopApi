@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace coffeeShopApi.Models
 {
-    public class Drink
+    public class Drink : BaseEntity
     {
-        public int Id { get; set; }
 
         [Required]
         [StringLength(150)]
