@@ -9,8 +9,14 @@ namespace coffeeShopApi.Data
 {
     public class ApplicationDbContext : DbContext
     {
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+        {
+        }
+
         public DbSet<Drink> Drinks { get; set; }
 
         public DbSet<Reservation> Reservations { get; set; }
+
+
     }
 }
